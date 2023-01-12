@@ -1,10 +1,7 @@
 # compiled output
-Backend/workoutApi/dist
-Backend/workoutApi/node_modules
-Backend/workoutApi/mysql-data
-Backend/auth-api-v4/dist
-Backend/auth-api-v4/node_modules
-Backend/auth-api-v4/mysql-data
+/dist
+/node_modules
+
 # Logs
 logs
 *.log

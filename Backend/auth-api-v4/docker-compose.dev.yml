@@ -1,0 +1,25 @@
+version: "10.3"
+services:
+  mysql:
+    image: mariadb
+    container_name: auth
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: auth
+      MYSQL_DATABASE: 'auth'
+      MYSQL_USER: 'auth'
+      MYSQL_PASSWORD: 'auth'
+    volumes:
+      - $PWD/mysql-data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - default
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.0.1
+    container_name: workout_phpmyadmin2
+    restart: always
+    environment:
+      PMA_HOST: mysql
+    ports:
+      - "8080:80"
