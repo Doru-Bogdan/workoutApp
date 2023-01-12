@@ -1,2 +1,2 @@
-# workoutApp-mobile
-Front-end for the workout app
+# workoutApp
+Front-end and backend for the workout app
