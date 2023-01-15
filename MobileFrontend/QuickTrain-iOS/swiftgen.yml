@@ -1,0 +1,7 @@
+xcassets:
+  inputs:
+    - QuickTrain-iOS/Resources/Images.xcassets
+    - QuickTrain-iOS/Resources/Colors.xcassets
+  outputs:
+    - templatePath: SwiftGen-xcassets.stencil
+      output: QuickTrain-iOS/Application/Generated/Assets.swift

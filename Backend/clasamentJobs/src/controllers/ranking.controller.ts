@@ -33,7 +33,7 @@ export class RankingController {
         @Body() body: {date: string},
         @Res() response: Response
     ): Promise<any> {
-        const ranking = await this.rankingService.getClasamentByDate(body.date);
+        const ranking = await this.rankingService.getClasamentByDate(new Date(body.date).getMonth() + " " + new Date(body.date).getFullYear());
 
         if (ranking)
             this.responseFactory.ok(ranking, response);

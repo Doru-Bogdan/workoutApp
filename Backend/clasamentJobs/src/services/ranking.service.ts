@@ -35,7 +35,9 @@ export class RankingService {
                         date: new Date().getMonth() + " " + new Date().getFullYear(),
                         position: i+1,
                         last_name: response.data[i].user_last_name,
-                        first_name: response.data[i].user_first_name
+                        first_name: response.data[i].user_first_name,
+                        user_level: response.data[i].user_level,
+                        user_currentPoints: response.data[i].user_currentPoints
                     }
                     raspuns.push(obj)
                     //await this.rankingRepository.save(ranking);

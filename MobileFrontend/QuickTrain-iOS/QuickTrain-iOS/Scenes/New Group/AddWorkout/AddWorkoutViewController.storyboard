@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3BQ-g5-S2t">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Workout View Controller-->
+        <scene sceneID="e9u-yg-ZmH">
+            <objects>
+                <viewController id="3BQ-g5-S2t" customClass="AddWorkoutViewController" customModule="QuickTrain_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Cbg-jh-Um6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BkL-fQ-48T">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTP-30-08a">
+                                        <rect key="frame" x="25" y="25" width="364" height="115"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Xtf-wB-CfE">
+                                                <rect key="frame" x="163.5" y="0.0" width="37" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="36D-FI-dXR"/>
+                                                    <constraint firstAttribute="width" constant="37" id="8Mm-Ih-z1V"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IBN-ao-P9U">
+                                                <rect key="frame" x="0.0" y="79" width="364" height="36"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add new workout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwa-4L-syT">
+                                                        <rect key="frame" x="60.5" y="0.0" width="243.5" height="36"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="IBN-ao-P9U" firstAttribute="top" secondItem="Xtf-wB-CfE" secondAttribute="bottom" constant="35" id="1Hp-Kz-0Du"/>
+                                            <constraint firstItem="IBN-ao-P9U" firstAttribute="centerX" secondItem="HTP-30-08a" secondAttribute="centerX" id="2c2-8y-DXP"/>
+                                            <constraint firstItem="Xtf-wB-CfE" firstAttribute="centerX" secondItem="HTP-30-08a" secondAttribute="centerX" id="63t-Ed-Sl7"/>
+                                            <constraint firstAttribute="bottom" secondItem="IBN-ao-P9U" secondAttribute="bottom" id="CKY-uZ-QwC"/>
+                                            <constraint firstAttribute="trailing" secondItem="IBN-ao-P9U" secondAttribute="trailing" id="QWH-Vy-3u4"/>
+                                            <constraint firstItem="Xtf-wB-CfE" firstAttribute="top" secondItem="HTP-30-08a" secondAttribute="top" id="kY6-HG-Aza"/>
+                                            <constraint firstItem="IBN-ao-P9U" firstAttribute="leading" secondItem="HTP-30-08a" secondAttribute="leading" id="xkO-sB-M7f"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2dn-HI-6N1">
+                                        <rect key="frame" x="25" y="180" width="364" height="396.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIE-qL-NJf" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="YqF-Rj-uwf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="tweePlaceholder" value="Email"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Workout Title"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v4T-lb-POe" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                <rect key="frame" x="0.0" y="60" width="364" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="f4e-Yq-4fZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="tweePlaceholder" value="Email"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Workout Video URL"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bTG-Lz-eO7" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                <rect key="frame" x="0.0" y="120" width="364" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="WYm-mn-jmM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="tweePlaceholder" value="Email"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Workout thumbnail URL"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QHS-2r-LNf" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                <rect key="frame" x="0.0" y="180" width="364" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="oHS-MP-3fe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="tweePlaceholder" value="Email"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Workout Type ID"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZP9-8K-9eO" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                <rect key="frame" x="0.0" y="240" width="364" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="lMO-A2-1yH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="tweePlaceholder" value="Email"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Workout Required XP"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PAr-QH-pGq" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                <rect key="frame" x="0.0" y="300" width="364" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Iyj-m6-S9J"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="tweePlaceholder" value="Email"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Workout Value XP"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AKo-Qq-Ox3" customClass="GrowingTextView" customModule="GrowingTextView">
+                                                <rect key="frame" x="0.0" y="360" width="364" height="36.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Description"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minHeight">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hbe-y8-Vl4">
+                                        <rect key="frame" x="25" y="656.5" width="364" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYh-nI-eET" customClass="UIButtonX" customModule="QuickTrain_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="hY2-eB-Rn4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <state key="normal" title="Create account">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="LYh-nI-eET" firstAttribute="leading" secondItem="hbe-y8-Vl4" secondAttribute="leading" id="8Fh-ju-aFF"/>
+                                            <constraint firstAttribute="trailing" secondItem="LYh-nI-eET" secondAttribute="trailing" id="Qgd-jx-4br"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="2dn-HI-6N1" firstAttribute="top" secondItem="HTP-30-08a" secondAttribute="bottom" constant="40" id="CjT-Sn-wgI"/>
+                                    <constraint firstAttribute="trailing" secondItem="hbe-y8-Vl4" secondAttribute="trailing" constant="25" id="G2f-X4-EFq"/>
+                                    <constraint firstItem="2dn-HI-6N1" firstAttribute="leading" secondItem="BkL-fQ-48T" secondAttribute="leading" constant="25" id="IvG-9X-eZd"/>
+                                    <constraint firstAttribute="trailing" secondItem="2dn-HI-6N1" secondAttribute="trailing" constant="25" id="OIc-N0-lOt"/>
+                                    <constraint firstItem="HTP-30-08a" firstAttribute="centerX" secondItem="BkL-fQ-48T" secondAttribute="centerX" id="UJ8-8K-35r"/>
+                                    <constraint firstItem="HTP-30-08a" firstAttribute="top" secondItem="BkL-fQ-48T" secondAttribute="top" constant="25" id="YQF-XQ-vBS"/>
+                                    <constraint firstItem="HTP-30-08a" firstAttribute="leading" secondItem="BkL-fQ-48T" secondAttribute="leading" constant="25" id="Yxi-FS-dpb"/>
+                                    <constraint firstAttribute="bottom" secondItem="hbe-y8-Vl4" secondAttribute="bottom" constant="20" id="ck0-LL-zZZ"/>
+                                    <constraint firstItem="hbe-y8-Vl4" firstAttribute="leading" secondItem="BkL-fQ-48T" secondAttribute="leading" constant="25" id="pj4-Ns-bJF"/>
+                                    <constraint firstItem="hbe-y8-Vl4" firstAttribute="top" secondItem="2dn-HI-6N1" secondAttribute="bottom" constant="80" id="q2w-dF-b5G"/>
+                                    <constraint firstAttribute="trailing" secondItem="HTP-30-08a" secondAttribute="trailing" constant="25" id="sMb-FV-iXu"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Mx-hj-bvF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BkL-fQ-48T" firstAttribute="top" secondItem="7Mx-hj-bvF" secondAttribute="top" id="Qry-D8-Git"/>
+                            <constraint firstItem="7Mx-hj-bvF" firstAttribute="bottom" secondItem="BkL-fQ-48T" secondAttribute="bottom" id="Uvl-f2-ia4"/>
+                            <constraint firstItem="7Mx-hj-bvF" firstAttribute="trailing" secondItem="BkL-fQ-48T" secondAttribute="trailing" id="a4b-Wl-iUb"/>
+                            <constraint firstItem="BkL-fQ-48T" firstAttribute="leading" secondItem="7Mx-hj-bvF" secondAttribute="leading" id="ubV-51-vLh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="createWorkoutButton" destination="LYh-nI-eET" id="e4m-ez-95q"/>
+                        <outlet property="workoutDescriptionTextView" destination="AKo-Qq-Ox3" id="HQc-8N-G1W"/>
+                        <outlet property="workoutRequiredXpTextField" destination="ZP9-8K-9eO" id="vcU-LT-XEU"/>
+                        <outlet property="workoutThumbnailUrlTextField" destination="bTG-Lz-eO7" id="aoB-Wr-NYw"/>
+                        <outlet property="workoutTitleTextField" destination="eIE-qL-NJf" id="LPG-PW-hsh"/>
+                        <outlet property="workoutTypeIdTextField" destination="QHS-2r-LNf" id="Ce9-8z-baw"/>
+                        <outlet property="workoutValueXpTextField" destination="PAr-QH-pGq" id="HzG-f8-zrm"/>
+                        <outlet property="workoutVideoUrlTextField" destination="v4T-lb-POe" id="dff-7w-fjk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8MC-n4-Vta" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257.97101449275362" y="155.35714285714286"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="AKo-Qq-Ox3">
+            <size key="intrinsicContentSize" width="-1" height="30"/>
+        </designable>
+        <designable name="LYh-nI-eET">
+            <size key="intrinsicContentSize" width="122" height="33"/>
+        </designable>
+        <designable name="PAr-QH-pGq">
+            <size key="intrinsicContentSize" width="364" height="46.380859375"/>
+        </designable>
+        <designable name="QHS-2r-LNf">
+            <size key="intrinsicContentSize" width="364" height="46.380859375"/>
+        </designable>
+        <designable name="ZP9-8K-9eO">
+            <size key="intrinsicContentSize" width="364" height="46.380859375"/>
+        </designable>
+        <designable name="bTG-Lz-eO7">
+            <size key="intrinsicContentSize" width="364" height="46.380859375"/>
+        </designable>
+        <designable name="eIE-qL-NJf">
+            <size key="intrinsicContentSize" width="364" height="46.380859375"/>
+        </designable>
+        <designable name="v4T-lb-POe">
+            <size key="intrinsicContentSize" width="364" height="46.380859375"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="appleLogo" width="37" height="44"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

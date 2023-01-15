@@ -8,6 +8,7 @@ Backend/auth-api-v4/mysql-data
 Backend/clasamentJobs/dist
 Backend/clasamentJobs/node_modules
 Backend/clasamentJobs/mysql-data
+MobileFrontend/QuickTrain-iOS/Pods
 # Logs
 logs
 *.log

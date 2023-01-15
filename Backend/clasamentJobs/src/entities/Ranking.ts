@@ -22,4 +22,12 @@ export class Ranking extends CoreEntity {
     @Column()
     first_name: string;
 
+    @ApiProperty()
+    @Column()
+    user_level: number
+
+    @ApiProperty()
+    @Column()
+    user_currentPoints: number;
+
 }

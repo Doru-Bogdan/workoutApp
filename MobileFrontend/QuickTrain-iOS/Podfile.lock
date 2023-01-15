@@ -1,0 +1,165 @@
+PODS:
+  - Alamofire (5.6.1)
+  - CleanroomLogger (5.1.1)
+  - Defaults (4.2.2)
+  - DynamicBlurView (4.1.0)
+  - GrowingTextView (0.7.2)
+  - Hero (1.6.1)
+  - IQKeyboardManagerSwift (6.5.10)
+  - Kingfisher (5.15.8):
+    - Kingfisher/Core (= 5.15.8)
+  - Kingfisher/Core (5.15.8)
+  - MarqueeLabel (4.0.5)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
+  - NotificationBannerSwift (3.1.0):
+    - MarqueeLabel (~> 4.0.5)
+    - SnapKit (~> 5.0.1)
+  - Nuke (9.5.0)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - PopupDialog (1.1.1):
+    - DynamicBlurView (~> 4.0)
+  - Realm (10.28.1):
+    - Realm/Headers (= 10.28.1)
+  - Realm/Headers (10.28.1)
+  - RealmSwift (10.28.1):
+    - Realm (= 10.28.1)
+  - Reusable (4.1.2):
+    - Reusable/Storyboard (= 4.1.2)
+    - Reusable/View (= 4.1.2)
+  - Reusable/Storyboard (4.1.2)
+  - Reusable/View (4.1.2)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxNuke (2.0.1):
+    - Nuke (~> 9.0)
+    - RxSwift (~> 6.0)
+  - RxOptional (5.0.2):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRealm (5.0.4):
+    - Realm (~> 10.21)
+    - RealmSwift (~> 10.21)
+    - RxCocoa (~> 6.1)
+    - RxSwift (~> 6.1)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SDWebImage (5.12.6):
+    - SDWebImage/Core (= 5.12.6)
+  - SDWebImage/Core (5.12.6)
+  - SkyFloatingLabelTextField (3.8.0)
+  - SnapKit (5.0.1)
+  - SwiftDate (6.3.1)
+  - SwiftGen (6.5.1)
+  - SwiftGifOrigin (1.7.0)
+  - SwiftLint (0.47.1)
+  - Wormholy (1.6.5)
+  - youtube-ios-player-helper (1.0.4)
+
+DEPENDENCIES:
+  - CleanroomLogger
+  - Defaults
+  - GrowingTextView (= 0.7.2)
+  - Hero
+  - IQKeyboardManagerSwift
+  - Kingfisher (~> 5.15)
+  - Moya/RxSwift
+  - NotificationBannerSwift
+  - NVActivityIndicatorView (~> 4.8.0)
+  - PopupDialog
+  - RealmSwift
+  - Reusable
+  - RxCocoa
+  - RxNuke
+  - RxOptional
+  - RxRealm
+  - RxSwift
+  - SDWebImage
+  - SkyFloatingLabelTextField (~> 3.0)
+  - SnapKit
+  - SwiftDate
+  - SwiftGen
+  - SwiftGifOrigin (~> 1.7.0)
+  - SwiftLint
+  - Wormholy
+  - youtube-ios-player-helper
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CleanroomLogger
+    - Defaults
+    - DynamicBlurView
+    - GrowingTextView
+    - Hero
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - MarqueeLabel
+    - Moya
+    - NotificationBannerSwift
+    - Nuke
+    - NVActivityIndicatorView
+    - PopupDialog
+    - Realm
+    - RealmSwift
+    - Reusable
+    - RxCocoa
+    - RxNuke
+    - RxOptional
+    - RxRealm
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SkyFloatingLabelTextField
+    - SnapKit
+    - SwiftDate
+    - SwiftGen
+    - SwiftGifOrigin
+    - SwiftLint
+    - Wormholy
+    - youtube-ios-player-helper
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  CleanroomLogger: d921cc92d8e89c067653c0700b74a96b4e07fdab
+  Defaults: d785e56c0fb8890dc40351603f05c8e1df1bdd45
+  DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
+  GrowingTextView: 876bf42005b5e4a4fd740597db12caaf41f0fe6c
+  Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
+  MarqueeLabel: 00cc0bcd087111dca575878b3531af980559707d
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  NotificationBannerSwift: 49912a48b37e2f55d1cef4e8a38f15394f66a70a
+  Nuke: 6f400a4ea957e09149ec335a3c6acdcc814d89e4
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  PopupDialog: 720c92befd8bc23c13442254945213db5612f149
+  Realm: f4674e0e7ee537f67a78d79bd8319bc777d61d06
+  RealmSwift: 0e0e4786685c4442bf56d3831dfefb5fa05d6fd6
+  Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxNuke: 23175fb4b7cda4e3aa453588d895198ccf88f5ab
+  RxOptional: 3664964c96b69dd20c9cf78bdfe546615e26eca8
+  RxRealm: 666c8785327fe2fff972a3093b35dc7055c1ca38
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SDWebImage: a47aea9e3d8816015db4e523daff50cfd294499d
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
+  SwiftGen: a6d22010845f08fe18fbdf3a07a8e380fd22e0ea
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
+  SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
+  Wormholy: 3252bc3e55a1847ef9a0976c1377bd77bf3635fa
+  youtube-ios-player-helper: e9b97535e816db3152179d84d999bc1807ecd689
+
+PODFILE CHECKSUM: bc846959b1a8337870d967891fc8e50f92d68261
+
+COCOAPODS: 1.11.3
