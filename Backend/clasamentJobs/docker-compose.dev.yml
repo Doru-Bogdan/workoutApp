@@ -1,0 +1,25 @@
+version: "10.3"
+services:
+  mysql:
+    image: mariadb
+    container_name: ranking
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ranking
+      MYSQL_DATABASE: 'ranking'
+      MYSQL_USER: 'ranking'
+      MYSQL_PASSWORD: 'ranking'
+    volumes:
+      - $PWD/mysql-data:/var/lib/mysql
+    ports:
+      - "3308:3306"
+    networks:
+      - default
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.0.1
+    container_name: ranking_phpmyadmin1
+    restart: always
+    environment:
+      PMA_HOST: mysql
+    ports:
+      - "8082:80"

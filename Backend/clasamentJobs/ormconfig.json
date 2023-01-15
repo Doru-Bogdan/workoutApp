@@ -1,0 +1,17 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3308,
+    "username": "ranking",
+    "password": "ranking",
+    "database": "ranking",
+    "entities": ["dist/entities/*.js"],
+    "migrations": ["dist/migrations/*.js"],
+    "synchronize": true,
+    "logging": false,
+    "cli":{
+      "entitiesDir": "src/entities",
+      "migrationsDir": "src/migrations"
+    }
+    
+  }
