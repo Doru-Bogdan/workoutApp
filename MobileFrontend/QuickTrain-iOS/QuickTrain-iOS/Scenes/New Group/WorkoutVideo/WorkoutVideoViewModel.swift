@@ -80,8 +80,10 @@ class WorkoutVideoViewModel {
     
     func addXpToUser() {
         if 0.8 * videoDuration! < timeSpentOnVideo! {
-            AuthManager.shared.user?.level! += videoXp!
-            AuthManager.shared.user?.currentPoints! += self.getWorkoutTypePoints()
+            let user = AuthManager.shared.user
+            user?.level! += videoXp!
+            user?.currentPoints! += self.getWorkoutTypePoints()
+            AuthManager.setUser(user: user!)
             updateUserPoints()
             BannerNotification.showNotification(title: "Congratulations!",
                                                 subtitle: "You have gained \(items.value.xpValue ?? 0) XP and \(self.getWorkoutTypePoints()) points for this month!",

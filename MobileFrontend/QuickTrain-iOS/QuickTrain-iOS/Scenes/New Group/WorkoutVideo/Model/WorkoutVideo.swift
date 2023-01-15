@@ -21,7 +21,7 @@ struct WorkoutVideo: Codable {
         case title = "workoutTitle"
         case updatedAt
         case videoURL = "workoutVideoUrl"
-        case workoutTypeID = "workoutTypeId"
+        case workoutTypeID = "workoutIdType"
         case xpRequired = "workoutRequiredXp"
         case xpValue = "workoutValueXp"
     }
